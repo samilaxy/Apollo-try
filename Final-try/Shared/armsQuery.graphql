@@ -1,0 +1,11 @@
+mutation ArmsLogin($data: UserLoginInput) {
+  armsLogin(data: $data) {
+    token
+    success
+    user {
+      first_name
+      id
+      email
+    }
+  }
+} 
